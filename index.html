@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+	<style>
+        body{
+            margin: 0;
+            overflow: hidden;
+        }
+        .box{
+            width: 100vw;
+            height: 100vh;
+            background: #000;
+        }
+	</style>
+</head>
+<body>
+	<div class="box"></div>
+    <script src="createjs/easeljs-1.0.0.min.js"></script>
+    <script src="createjs/TweenMax.js"></script>
+	<script src="js/demo.js"></script>
+	<script>
+		let box = document.querySelector('.box')
+		let demo = new Demo({
+			dom: box,
+			// showBorder: true,
+			data: [
+				{
+					name: '1',
+					titlePos: [130, 60],
+					layout: [100, 100],
+					size: [200, 200],
+					lineWidth: 2,
+					pic: [
+						[200, 0],
+						[80, 50],
+						[75, 65],
+						[70, 90],
+						[80, 90],
+						[120, 80],
+						[150, 60],
+						[200, 0]
+					]
+				},
+				{
+					name: '2',
+					titlePos: [35, 65],
+					layout: [240, 140],
+					size: [70, 140],
+					lineWidth: 2,
+					pic: [
+						[40, 0],
+						[10, 50],
+						[0, 80],
+						[30, 130],
+						[50, 90],
+						[60, 60],
+						[70, 30],
+						[40, 0]
+					]
+				}
+			]
+		})
+	</script>
+</body>
+</html>
